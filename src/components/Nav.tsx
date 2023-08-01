@@ -1,4 +1,12 @@
+import { useState } from 'react';
+
 export default function Nav() {
+  const [isActive, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
+
   return (
     <header>
       <a href='#' className='logo'>
@@ -6,7 +14,7 @@ export default function Nav() {
         <span>Nate Mueller</span>
       </a>
 
-      <ul className='navbar'>
+      <ul className={isActive ? 'navbar' : 'navbar open'}>
         <li>
           <a href='#' className='active'>
             Projects
@@ -22,7 +30,11 @@ export default function Nav() {
 
       <div className='main'>
         <a href='#'>Resume</a>
-        <div className='bx bx-menu' id='menu-icon'></div>
+        <div
+          onClick={toggleClass}
+          className={isActive ? 'bx bx-menu' : 'bx-x bx-menu'}
+          id='menu-icon'
+        ></div>
       </div>
     </header>
   );
