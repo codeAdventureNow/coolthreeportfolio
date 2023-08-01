@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Resume from '../assets/Nate-Mueller-Front-End-Web-Dev.pdf';
 
 export default function Nav() {
   const [isActive, setActive] = useState(false);
@@ -29,7 +30,9 @@ export default function Nav() {
       </ul>
 
       <div className='main'>
-        <a href='#'>Resume</a>
+        <a rel='noreferrer' target='_blank' href={Resume}>
+          Resume
+        </a>
         <div
           onClick={toggleClass}
           className={isActive ? 'bx bx-menu' : 'bx-x bx-menu'}
