@@ -110,12 +110,12 @@ header {
 }
 
 #hero {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .fa {
   color: white;
-  width: 20px;
+  width: 40px;
 }
 
 #wrapper {
@@ -140,16 +140,10 @@ header {
   #wrapper {
     display: flex;
     flex-direction: column;
-    margin: 0 20%;
+    margin: 0 10%;
   }
   #menu-icon {
     display: block;
-  }
-
-  #hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .navbar {
@@ -185,9 +179,33 @@ header {
     right: 2%;
   }
 
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   #hero-pic {
     width: 40%;
     height: auto;
     border-radius: 10px;
+  }
+
+  .hero-elements {
+    margin-top: 35px;
+  }
+
+  #hero p {
+    text-align: center;
+  }
+  .tech-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .techstack p img {
+    margin: 10px;
   }
 }
