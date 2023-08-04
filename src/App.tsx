@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Nav />
-      <Hero />
+      <div id='wrapper'>
+        <Hero />
+      </div>
     </>
   );
 }

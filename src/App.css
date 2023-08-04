@@ -118,6 +118,10 @@ header {
   width: 20px;
 }
 
+#wrapper {
+  display: flex;
+}
+
 /* tablets */
 @media (max-width: 1280px) {
   header {
@@ -133,8 +137,19 @@ header {
 
 /* smallest screens */
 @media (max-width: 1090px) {
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20%;
+  }
   #menu-icon {
     display: block;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar {
@@ -173,6 +188,6 @@ header {
   #hero-pic {
     width: 40%;
     height: auto;
-    border-radius: 70%;
+    border-radius: 10px;
   }
 }
