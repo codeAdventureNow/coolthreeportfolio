@@ -1,4 +1,4 @@
-import Profile from '../assets/profilepic.jpg';
+import Profile from '../assets/profilepicsquare.jpg';
 
 export default function Hero() {
   return (
@@ -8,7 +8,8 @@ export default function Hero() {
       <p className='hero-elements'>
         I am a Front End Web Developer with over a year and a half of coding
         experience, specializing in crafting modern web applications using
-        React, TypeScript, JavaScript, HTML, and CSS.
+        <span> React</span>, <span>TypeScript</span>, <span>JavaScript</span>,
+        HTML, and CSS.
       </p>
       <div className='social-profile hero-elements'>
         <a
