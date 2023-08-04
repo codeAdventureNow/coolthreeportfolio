@@ -109,6 +109,15 @@ header {
   display: none;
 }
 
+#hero {
+  margin-top: 200px;
+}
+
+.fa {
+  color: white;
+  width: 20px;
+}
+
 /* tablets */
 @media (max-width: 1280px) {
   header {
@@ -159,5 +168,11 @@ header {
 
   .navbar.open {
     right: 2%;
+  }
+
+  #hero-pic {
+    width: 40%;
+    height: auto;
+    border-radius: 70%;
   }
 }
