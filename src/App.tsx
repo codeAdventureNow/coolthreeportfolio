@@ -1,13 +1,14 @@
 import './App.css';
 import Nav from './components/Nav';
-import Hero from './components/Hero';
+// import Hero from './components/Hero';
+import NewHero from './components/NewHero';
 
 function App() {
   return (
     <>
-      <Nav />
-      <div id='wrapper'>
-        <Hero />
+      <div className='wrapper'>
+        <Nav />
+        <NewHero />
       </div>
     </>
   );
