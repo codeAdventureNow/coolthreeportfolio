@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
+  line-height: 1.8;
 }
 
 header {
@@ -130,10 +131,12 @@ header {
 
 .fa {
   color: white;
-  width: 40px;
+  font-size: 24px;
+  width: 60px;
+  transition: all 0.5s ease;
 }
 
-#hero p span {
+.fa:hover {
   color: var(--main-color);
 }
 
@@ -159,10 +162,17 @@ header {
   border: 2px solid grey;
 }
 
+.hero-text {
+  margin-right: 120px;
+}
+
 .hero-text h1 {
   font-size: 3rem;
 }
 
+.hero-text span {
+  color: var(--main-color);
+}
 .hero-elements {
   margin-top: 45px;
 }
