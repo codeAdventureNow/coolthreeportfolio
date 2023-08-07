@@ -121,12 +121,13 @@ header {
 }
 
 .hero {
-  margin-top: 50px;
+  margin-top: -80px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 100vh;
 }
 
 .fa {
@@ -175,6 +176,12 @@ header {
 }
 .hero-elements {
   margin-top: 45px;
+}
+
+.hero-skills img {
+  margin-top: 40px;
+  margin-left: -12px;
+  margin-right: 40px;
 }
 /* tablets */
 @media (max-width: 1280px) {
