@@ -7,6 +7,7 @@
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -27,12 +28,21 @@ header {
   top: 0;
   right: 0;
   z-index: 1000;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: transparent;
   padding: 28px 12%;
   transition: all 0.5s ease;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -127,20 +137,12 @@ header {
   color: var(--main-color);
 }
 
-.container {
-  max-width: 1200px;
-  padding: 0 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 65rem;
+  margin-top: 10%;
 }
 
 .hero-main {
@@ -155,6 +157,14 @@ header {
   height: auto;
   border-radius: 50%;
   border: 2px solid grey;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-elements {
+  margin-top: 45px;
 }
 /* tablets */
 @media (max-width: 1280px) {
@@ -224,10 +234,6 @@ header {
     height: auto;
     border-radius: 50%;
     border: 2px solid grey;
-  }
-
-  .hero-elements {
-    margin-top: 35px;
   }
 
   #hero p {
