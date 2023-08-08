@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 :root {
@@ -190,6 +190,35 @@ header {
     transition: 0.2s;
   }
 
+  #hero-pic {
+    width: 220px;
+  }
+
+  .hero-main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-text {
+    margin-right: 0;
+    text-align: center;
+    max-width: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-skills {
+    margin-top: 35px;
+  }
+
+  .hero-skills img {
+    margin: 0px 10px 10px;
+  }
+
   .navbar a {
     padding: 5px 0;
     margin: 0px 20px;
@@ -205,6 +234,23 @@ header {
   }
   #menu-icon {
     display: block;
+  }
+
+  .hero-text {
+    margin-right: 0;
+    text-align: center;
+    max-width: 60%;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-elements {
+    margin-top: 30px;
+  }
+
+  .hero {
+    margin-top: -90px;
   }
 
   .navbar {
@@ -247,10 +293,7 @@ header {
   }
 
   #hero-pic {
-    width: 40%;
-    height: auto;
-    border-radius: 50%;
-    border: 2px solid grey;
+    width: 170px;
   }
 
   #hero p {
@@ -265,5 +308,37 @@ header {
 
   .techstack p img {
     margin: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    line-height: 1.7;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    line-height: 1.6;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    margin-top: -50px;
   }
 }
