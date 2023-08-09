@@ -200,6 +200,7 @@ header {
   flex-direction: column;
   align-items: center;
   max-width: 330px;
+  line-height: 1.4;
 }
 .project-card img {
   width: 80%;
@@ -208,6 +209,28 @@ header {
 .card-text {
   color: black;
   text-align: center;
+}
+
+.card-text h2 {
+  margin: 15px 0;
+}
+
+.card-buttons {
+  margin: 20px 0;
+}
+.cta-btn {
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 5px;
+  margin: 30px 20px;
+  outline: 1px solid var(--bg-color);
+  transition: all 0.5s ease;
+}
+
+.cta-btn:hover {
+  color: var(--main-color);
+  background: var(--bg-color);
 }
 /* tablets */
 @media (max-width: 1280px) {
