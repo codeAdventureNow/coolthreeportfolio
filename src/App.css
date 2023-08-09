@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -121,7 +121,7 @@ header {
 }
 
 .hero {
-  margin-top: -80px;
+  /* margin-top: -80px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -250,7 +250,7 @@ header {
   }
 
   .hero {
-    margin-top: -90px;
+    /* margin-top: -90px; */
   }
 
   .navbar {
@@ -321,7 +321,7 @@ header {
   }
 
   .hero {
-    margin-top: -50px;
+    /* margin-top: -50px; */
   }
 }
 
@@ -339,6 +339,6 @@ header {
   }
 
   .hero {
-    margin-top: -50px;
+    /* margin-top: -50px; */
   }
 }
