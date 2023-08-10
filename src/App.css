@@ -208,6 +208,29 @@ header {
   border-radius: 5px;
 }
 
+.card-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 10px 0;
+}
+
+/* --bg-color: #222327;
+--text-color: #fff;
+--main-color: #ffd700; */
+
+.card-skills p {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: var(--main-color);
+  color: #e34234;
+  color: #ff4433;
+  /* background: var(--bg-color); */
+  opacity: 0.8;
+}
+
 .card-text {
   color: black;
   text-align: center;
