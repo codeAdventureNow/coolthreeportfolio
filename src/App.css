@@ -31,7 +31,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+
+  background: var(--bg-color);
   padding: 28px 12%;
   transition: all 0.5s ease;
 }
@@ -213,22 +214,14 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 10px 0;
 }
-
-/* --bg-color: #222327;
---text-color: #fff;
---main-color: #ffd700; */
 
 .card-skills p {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 5px 10px;
-  color: var(--main-color);
-  color: #e34234;
   color: #ff4433;
-  /* background: var(--bg-color); */
-  opacity: 0.8;
+  margin: 12px 0;
 }
 
 .card-text {
@@ -252,7 +245,7 @@ header {
   outline: 1px solid var(--bg-color);
   width: 80%;
   border-radius: 5px;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
 }
 
