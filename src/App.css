@@ -194,7 +194,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 .projects-content {
@@ -209,7 +209,7 @@ header {
 }
 .project-card {
   background: #f5f6f7;
-  margin: 50px;
+  margin: 25px;
   padding: 20px 10px;
   border-radius: 15px;
   display: flex;
