@@ -206,6 +206,7 @@ header {
 .projects-heading {
   margin: 50px 0;
   font-size: 1.8rem;
+  
 }
 .project-card {
   background: #f5f6f7;
@@ -268,6 +269,47 @@ header {
 .cta-btn:hover {
   color: var(--main-color);
   background: var(--bg-color);
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.about-container .about-img,
+.about-container p {
+  width: 50%;
+}
+
+.about-heading {
+  margin: 50px 0;
+  font-size: 1.8rem;
+}
+
+.about-text {
+  margin: 0 20px;
+}
+
+.about-img img {
+  width: 320px;
+  border-radius: 20px;
 }
 /* tablets */
 @media (max-width: 1280px) {
@@ -334,7 +376,7 @@ header {
   }
 
   .hero {
-    /* margin-top: -90px; */
+    margin-top: 70px;
   }
 
   .navbar {
@@ -393,6 +435,23 @@ header {
   .techstack p img {
     margin: 10px;
   }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-img {
+    margin-bottom: 45px;
+  }
+
+  .about-container .about-img,
+  .about-container p {
+    width: 55%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -405,7 +464,13 @@ header {
   }
 
   .hero {
-    /* margin-top: -50px; */
+    margin-top: 100px;
+  }
+
+  .about-container .about-img,
+  .about-container p {
+    width: 70%;
+    text-align: center;
   }
 }
 
@@ -423,6 +488,27 @@ header {
   }
 
   .hero {
-    /* margin-top: -50px; */
+    margin-top: 150px;
   }
+
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .about-container .about-img,
+  .about-container p {
+    width: 85%;
+    text-align: center;
+  }
+
+  .about-container p {
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 280px;
+  
 }
