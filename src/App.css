@@ -8,6 +8,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg-color: #222327;
   --text-color: #fff;
@@ -19,10 +23,11 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   line-height: 1.8;
+
 }
 
 header {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 0;
   right: 0;
@@ -203,7 +208,7 @@ header {
 }
 
 .projects-heading {
-  margin: 50px 0;
+  margin: 10px 0;
   font-size: 1.8rem;
   
 }

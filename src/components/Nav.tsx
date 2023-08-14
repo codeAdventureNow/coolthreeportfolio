@@ -17,15 +17,15 @@ export default function Nav() {
 
       <ul className={isActive ? 'navbar' : 'navbar open'}>
         <li>
-          <a href='#' className='active'>
+          <a href='#projects' className='active'>
             Projects
           </a>
         </li>
         <li>
-          <a href='#'>About</a>
+          <a href='#about'>About</a>
         </li>
         <li>
-          <a href='#'>Contact</a>
+          <a href='#contact'>Contact</a>
         </li>
       </ul>
 
