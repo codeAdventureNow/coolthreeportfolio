@@ -3,9 +3,9 @@ export default function Contact() {
     <section id='contact'>
       <div className='contact-content'>
         <h2 className='contact-heading'>Contact</h2>
-        <p>Let's chat and connect!</p>
+        <h4>Let's chat and connect!</h4>
         {/* <div className='contact-buttons'></div> */}
-        <div className='social-profile hero-elements'>
+        <div className='contact-socials'>
           <a
             rel='noreferrer'
             href='https://www.linkedin.com/in/nate-mueller-b50317/'
