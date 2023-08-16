@@ -64,7 +64,7 @@ export default function Nav() {
       </ul>
 
       <div className='main'>
-        <a rel='noreferrer' target='_blank' href={Resume}>
+        <a className='resume' rel='noreferrer' target='_blank' href={Resume}>
           Resume
         </a>
         <div
