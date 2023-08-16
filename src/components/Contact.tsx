@@ -4,7 +4,11 @@ export default function Contact() {
       <div className='contact-content'>
         <h2 className='contact-heading'>Contact</h2>
         <h4>Let's chat and connect!</h4>
-        {/* <div className='contact-buttons'></div> */}
+        <p>
+          I'm eager to grow professionally and contribute to your projects. I'm
+          open to on-site work and relocation, valuing collaboration. Let's join
+          forces and achieve great things together!
+        </p>
         <div className='contact-socials'>
           <a
             rel='noreferrer'
