@@ -1,11 +1,17 @@
 import { useState } from 'react';
 import Resume from '../assets/Nate-Mueller-Front-End-Web-Dev.pdf';
+import { Link } from 'react-scroll';
 
 export default function Nav() {
-  const [isActive, setActive] = useState(false);
+  const [isActive, setActive] = useState(true);
+  const [activeLink, setActiveLink] = useState('');
 
   const toggleClass = () => {
     setActive(!isActive);
+  };
+
+  const handleLinkClick = (linkId: string) => {
+    setActiveLink(linkId);
   };
 
   return (
@@ -17,15 +23,43 @@ export default function Nav() {
 
       <ul className={isActive ? 'navbar' : 'navbar open'}>
         <li>
-          <a href='#projects' className='active'>
+          <Link
+            to='projects'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={200}
+            onClick={() => handleLinkClick('section1')}
+            className={activeLink === 'projects' ? 'active' : ''}
+          >
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a href='#about'>About</a>
+          <Link
+            to='about'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={200}
+            onClick={() => handleLinkClick('about')}
+            className={activeLink === 'about' ? 'active' : ''}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a href='#contact'>Contact</a>
+          <Link
+            to='contact'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={200}
+            onClick={() => handleLinkClick('contact')}
+            className={activeLink === 'contact' ? 'active' : ''}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
 
