@@ -5,16 +5,20 @@ import TicTacToe from '../assets/TicTacToe.jpg';
 import MarkdownPreviewer from '../assets/Markdown.jpg';
 import PomodoroTimer from '../assets/pomodoro.jpg';
 
-function ProjectCard({
-  img,
-  title,
-  description,
-  hrefApp,
-  hrefSource,
-  skillOne,
-  skillTwo,
-  skillThree,
-}) {
+type projectCardProps = {
+  img: string;
+  title: string;
+  description: string;
+  hrefApp: string;
+  hrefSource: string;
+  skillOne?: string;
+  skillTwo?: string;
+  skillThree?: string;
+};
+
+const ProjectCard = (props: projectCardProps) => {
+  const { img, title, description, hrefApp, hrefSource, skillOne, skillTwo } =
+    props;
   return (
     <div className='project-card'>
       <img src={img} alt={title} />
@@ -48,7 +52,7 @@ function ProjectCard({
       <div className='project-text'></div>
     </div>
   );
-}
+};
 
 export default function Projects() {
   return (
