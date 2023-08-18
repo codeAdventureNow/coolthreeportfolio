@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 export default function Nav() {
   const [isActive, setActive] = useState(true);
   const [activeLink, setActiveLink] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleClass = () => {
     setActive(!isActive);
@@ -12,6 +13,10 @@ export default function Nav() {
 
   const handleLinkClick = (linkId: string) => {
     setActiveLink(linkId);
+  };
+
+  const toggleOpen = () => {
+    setIsOpen((prevOpen) => !prevOpen);
   };
 
   return (
@@ -68,10 +73,14 @@ export default function Nav() {
           Resume
         </a>
         <div
-          onClick={toggleClass}
-          className={isActive ? 'bx bx-menu' : 'bx-x bx-menu'}
-          id='menu-icon'
-        ></div>
+          onClick={toggleOpen || toggleClass}
+          className={`nav-icon1 ${isOpen ? 'open' : ''}`}
+          id='nav-icon1'
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
   );
