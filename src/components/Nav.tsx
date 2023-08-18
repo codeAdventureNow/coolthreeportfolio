@@ -7,16 +7,13 @@ export default function Nav() {
   const [activeLink, setActiveLink] = useState('');
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleClass = () => {
-    setActive(!isActive);
-  };
-
   const handleLinkClick = (linkId: string) => {
     setActiveLink(linkId);
   };
 
-  const toggleOpen = () => {
+  const toggleBurgerMenu = () => {
     setIsOpen((prevOpen) => !prevOpen);
+    setActive(!isActive);
   };
 
   return (
@@ -73,7 +70,7 @@ export default function Nav() {
           Resume
         </a>
         <div
-          onClick={toggleOpen || toggleClass}
+          onClick={toggleBurgerMenu}
           className={`nav-icon1 ${isOpen ? 'open' : ''}`}
           id='nav-icon1'
         >
