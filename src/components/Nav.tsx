@@ -3,7 +3,7 @@ import Resume from '../assets/Nate-Mueller-Front-End-Web-Dev.pdf';
 import { Link } from 'react-scroll';
 
 export default function Nav() {
-  const [isActive, setActive] = useState(false);
+  const [isActive, setActive] = useState(true);
   const [activeLink, setActiveLink] = useState('');
   const [isOpen, setIsOpen] = useState(false);
 
