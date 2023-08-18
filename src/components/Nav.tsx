@@ -18,7 +18,7 @@ export default function Nav() {
 
   return (
     <header>
-      <a href='#' className='logo'>
+      <a href='#home' className='logo'>
         <i className='bx bxs-home-heart'></i>
         <span>Nate Mueller</span>
       </a>
@@ -31,7 +31,7 @@ export default function Nav() {
             smooth={true}
             offset={-70}
             duration={200}
-            onClick={() => handleLinkClick('section1')}
+            onClick={() => handleLinkClick('')}
             className={activeLink === 'projects' ? 'active' : ''}
           >
             Projects
@@ -44,7 +44,7 @@ export default function Nav() {
             smooth={true}
             offset={-70}
             duration={200}
-            onClick={() => handleLinkClick('about')}
+            onClick={() => handleLinkClick('')}
             className={activeLink === 'about' ? 'active' : ''}
           >
             About
@@ -57,7 +57,7 @@ export default function Nav() {
             smooth={true}
             offset={-70}
             duration={200}
-            onClick={() => handleLinkClick('contact')}
+            onClick={() => handleLinkClick('')}
             className={activeLink === 'contact' ? 'active' : ''}
           >
             Contact

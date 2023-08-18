@@ -325,7 +325,7 @@ header {
 }
 
 #contact {
-  margin: 120px 0px;
+  margin: 120px 0px 350px;
 }
 
 .fa-envelope {
@@ -398,6 +398,9 @@ header {
   .contact-heading {
     margin: 120px 0 70px 0;
     font-size: 1.8rem;
+  }
+  #contact {
+    margin: 120px 0px 280px;
   }
 }
 
