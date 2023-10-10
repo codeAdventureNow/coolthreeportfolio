@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Resume from '../assets/Nate-Mueller-Front-End-Developer-2023.pdf';
+import Resume from '../assets/Nate_Mueller_Front_End_Web_Dev_2023.pdf';
 import { Link } from 'react-scroll';
 
 export default function Nav() {
