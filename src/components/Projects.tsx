@@ -4,6 +4,7 @@ import Calculator from '../assets/Calculator.png';
 import TicTacToe from '../assets/TicTacToe.jpg';
 import MarkdownPreviewer from '../assets/Markdown.jpg';
 import PomodoroTimer from '../assets/pomodoro.jpg';
+import MusiciansMobile from '../assets/MusiciansMobile.jpg';
 
 type projectCardProps = {
   img: string;
@@ -60,6 +61,20 @@ export default function Projects() {
       <div className='projects-content'>
         <h2 className='projects-heading'>Projects</h2>
         <div className='projects-cards-container'>
+          <ProjectCard
+            img={MusiciansMobile}
+            title={'Musicians Mobile'}
+            description={
+              'Full stack commercial website for the Southy SF Bays leading service for home music lessons.'
+            }
+            skillOne='React'
+            skillTwo='Next JS'
+            skillThree='React Testing Library'
+            hrefApp={'https://musicians-mobile-site-2023.vercel.app/'}
+            hrefSource={
+              'https://github.com/codeAdventureNow/Musicians_Mobile_Site_2023'
+            }
+          />
           <ProjectCard
             img={IdeaBoard}
             title={'Idea Board'}

@@ -13,7 +13,7 @@ export default function NewHero() {
                 coding experience, specializing in crafting modern web
                 applications using
                 <span> React</span>, <span>TypeScript</span>,{' '}
-                <span>JavaScript</span>, HTML, and CSS.
+                <span>JavaScript</span>, <span>Next JS</span>, HTML, and CSS.
               </p>
               <div className='social-profile hero-elements'>
                 <a
@@ -84,6 +84,18 @@ export default function NewHero() {
                 <img
                   src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'
                   alt='tailwind'
+                  width='40'
+                  height='40'
+                />
+                <img
+                  src='https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg'
+                  alt='jest'
+                  width='40'
+                  height='40'
+                />
+                <img
+                  src='https://www.vectorlogo.zone/logos/figma/figma-icon.svg'
+                  alt='figma'
                   width='40'
                   height='40'
                 />
