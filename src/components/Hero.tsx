@@ -9,7 +9,8 @@ export default function NewHero() {
             <div className='hero-text'>
               <h1 className='hero-elements'>Front End Developer</h1>
               <p className='hero-elements'>
-                I am a Front End Web Developer with over a year and a half of
+                As of August 2023 I have been employed as a Front End Web
+                Developer at Musicians Mobile. I possess over two years of
                 coding experience, specializing in crafting modern web
                 applications using
                 <span> React</span>, <span>TypeScript</span>,{' '}
